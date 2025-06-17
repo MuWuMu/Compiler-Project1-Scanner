@@ -1,11 +1,17 @@
-# Project2-Parser
+# Project1-Scanner
 
-## Quick Start
+## Hint
 
-生成執行檔：
-    $gcc lex.yy.c -o scanner -lfl
+Must execute in Linux environment.
+With gcc and flex
 
-運行生成的執行檔，並輸入sD文件（以HelloWorld.sd為例）：
-    $./scanner < HelloWorld.sd
+## Excuting step
 
-    
+1. Generate C source code
+    flex scanner.l
+
+2. Compile executable file with gcc
+    gcc lex.yy.c -o scanner -lfl
+
+3. Execute scanner with sD file input (shown as HelloWorld.sd)
+    ./scanner < HelloWorld.sd
